@@ -1,0 +1,144 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container h1{
+    color: aliceblue;
+}
+.outer-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: aliceblue;
+    font-size: 21px;
+}
+
+#minute {
+    font-size: 32px;
+}
+
+#second {
+    font-size: 28px;
+}
+
+#msecond {
+    font-size: 17px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 250px;
+    gap: 30px;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: black;
+    background: aliceblue;
+}
+#reset , #lap{ 
+    display: none;
+} 
+#laps {
+    overflow: auto;
+    list-style: none;
+    color: aliceblue;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+
+#laps::-webkit-scrollbar {
+    display: none;
+}
+
+.lap-items {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 50px;
+    margin-bottom: 15px;
+}
+
+.number {
+    color: #cccccc;
+}
+
+.time-stamp {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#lap-clear-button {
+    position: fixed;
+    display: block;
+    z-index: 1000;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 130px;
+    padding: 15px 0;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer; 
+     display: none;
+}
+
+#lap-clear-button:hover {
+    background-color: aliceblue;
+    color: #444;
+}
